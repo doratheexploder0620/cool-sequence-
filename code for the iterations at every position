@@ -1,0 +1,24 @@
+def f(n):
+    l=[]
+    for j in range (2,n):
+        t=1
+        k=j
+        m=0
+
+        while t==1 :
+            if k%2!=0:
+                k=(k+1)/2
+            else :
+                k=(n+k)/2
+            m=m+1
+            if k==j:
+                t=7
+                l.append(m)
+    return(l)
+#import the libraries and plot the the function for n=20
+import matplotlib.pyplot as plt
+import numpy as np
+y=f(222)
+plt.figure(figsize=(5,5))
+plt.plot(y)
+plt.show()
